@@ -14,8 +14,9 @@ Beast Mode
 
 Note
 
-- Some basic styling has been done using the Semantic UI CDN
-- See public > index.html
+- Some basic styling has been done using the Semantic UI React
+- See https://react.semantic-ui.com/
+- Run npm install after cloning
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
