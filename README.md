@@ -14,7 +14,7 @@ Beast Mode
 
 Note
 
-- Some basic styling has been done using the Semantic UI React
+- Some basic styling has been done using Semantic UI React
 - See https://react.semantic-ui.com/
 - Run npm install after cloning
 
