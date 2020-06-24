@@ -1,4 +1,4 @@
-# Numbers Challenge
+# Number Trivia Challenge
 
 For this challenge you will need to draw on your knowlege of controlled vs uncontrolled components, lifting state and making API requests in React.
 
