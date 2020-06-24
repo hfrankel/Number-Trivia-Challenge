@@ -1,3 +1,22 @@
+# Numbers Challenge
+
+For this challenge you will need to draw on your knowlege of controlled vs uncontrolled components, lifting state and making API requests in React.
+
+This app should meet the following criteria:
+
+- The input in the SearchBar component should be controlled
+- After typing in a number and pressing enter, a piece of trivia about that number should be rendered on the Number component
+- Use http://numbersapi.com/ to get the trivia information
+
+Beast Mode
+
+- Add a dropdown next to the input field that allows trivia, year, date or math data to be selected for the number searched
+
+Note
+
+- Some basic styling has been done using the Semantic UI CDN
+- See public > index.html
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
