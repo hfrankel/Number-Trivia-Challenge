@@ -6,9 +6,9 @@ import Number from './Number';
 class App extends React.Component {
   state = { number: '' };
 
-  onSearchSubmit = async (numberSel) => {
+  onSearchSubmit = async (numberSel, option) => {
     const response = await axios.get(
-      `http://numbersapi.com/${numberSel}/trivia`
+      `http://numbersapi.com/${numberSel}/${option}`
     );
 
     this.setState({ number: response.data });
