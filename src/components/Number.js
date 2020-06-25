@@ -2,7 +2,7 @@ import React from 'react';
 
 class Number extends React.Component {
   render() {
-    return <div>Display number triva here...</div>;
+    return <div>{this.props.number}</div>;
   }
 }
 
