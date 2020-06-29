@@ -1,4 +1,4 @@
-# Number Trivia Challenge
+# Numbers Challenge
 
 For this challenge you will need to draw on your knowlege of controlled vs uncontrolled components, lifting state and making API requests in React.
 
@@ -14,9 +14,8 @@ Beast Mode
 
 Note
 
-- Some basic styling has been done using Semantic UI React
-- See https://react.semantic-ui.com/
-- Run npm install after cloning
+- Some basic styling has been done using the Semantic UI CDN
+- See public > index.html
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

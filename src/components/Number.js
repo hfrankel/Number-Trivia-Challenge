@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
-class Number extends React.Component {
-  render() {
-    return <div>Display number triva here...</div>;
-  }
+function Number(props) {
+  return <div>{props.number}</div>;
 }
 
 export default Number;
