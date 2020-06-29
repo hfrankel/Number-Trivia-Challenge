@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Dropdown } from 'semantic-ui-react';
 
-const SearchBar = (props) => {
+const SearchBar = ({ onSubmit }) => {
   const [numberSel, setNumberSel] = useState('');
   const [option, setOption] = useState('');
 
@@ -9,7 +9,7 @@ const SearchBar = (props) => {
     event.preventDefault();
 
     if (event.keyCode === 13) {
-      props.onSubmit(numberSel, option);
+      onSubmit(numberSel, option);
     }
   };
 
