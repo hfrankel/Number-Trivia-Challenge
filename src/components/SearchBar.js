@@ -1,65 +1,62 @@
-import React from 'react';
-import { Dropdown } from 'semantic-ui-react';
+import React, { useState } from "react";
+import { Dropdown } from "semantic-ui-react";
 
-class SearchBar extends React.Component {
-  state = { numberSel: '', option: '' };
+const SearchBar = (props) => {
+  const [valueState, setValueState] = useState("");
+  const [numberState, setNumberState] = useState("");
 
-  onFormSubmit = (event) => {
+  const onFormSubmit = (event) => {
     event.preventDefault();
-
     if (event.keyCode === 13) {
-      this.props.onSubmit(this.state.numberSel, this.state.option);
+      console.log("testing");
+      props.onSubmit(valueState, numberState);
     }
   };
 
-  render() {
-    const numberOptions = [
-      {
-        key: 'trivia',
-        text: 'Trivia',
-        value: 'trivia',
-      },
-      {
-        key: 'year',
-        text: 'Year',
-        value: 'year',
-      },
-      {
-        key: 'date',
-        text: 'Date',
-        value: 'date',
-      },
-      {
-        key: 'math',
-        text: 'Math',
-        value: 'math',
-      },
-    ];
-    return (
-      <div className="ui segment">
-        <div className="ui form" onSubmit={this.onFormSubmit}>
-          <div className="field">
-            <label>Search a number</label>
-            <Dropdown
-              placeholder="Select"
-              fluid
-              selection
-              options={numberOptions}
-              onChange={(e) =>
-                this.setState({ option: e.target.innerText.toLowerCase() })
-              }
-            />
-            <input
-              type="text"
-              value={this.state.numberSel}
-              onChange={(e) => this.setState({ numberSel: e.target.value })}
-              onKeyUp={this.onFormSubmit}
-            />
-          </div>
+  const numberOptions = [
+    {
+      key: "trivia",
+      text: "Trivia",
+      value: "trivia",
+    },
+    {
+      key: "year",
+      text: "Year",
+      value: "year",
+    },
+    {
+      key: "date",
+      text: "Date",
+      value: "date",
+    },
+    {
+      key: "math",
+      text: "Math",
+      value: "math",
+    },
+  ];
+  return (
+    <div className='ui segment'>
+      <div className='ui form' onSubmit={onFormSubmit}>
+        <div className='field'>
+          <label>Search a number</label>
+          <Dropdown
+            placeholder='Select'
+            fluid
+            selection
+            options={numberOptions}
+            onChange={(e) => setNumberState(e.target.innerText.toLowerCase())}
+          />
+          <input
+            type='text'
+            value={valueState}
+            onChange={(e) => setValueState(e.target.value)}
+            onKeyUp={onFormSubmit}
+          />
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default SearchBar;
